@@ -1,0 +1,50 @@
+body{
+    background-color: #BF9680;
+}
+h1{
+    text-align: center;
+   color: aliceblue;
+   font-family: Arial;
+}
+.caja{
+   margin: 0 400px;
+}
+.container {
+    width: 100%;
+    height: 130px;
+    position: relative;
+    border: 3px  solid rgb(255, 255, 255);
+    background-color: #bc8163;
+  }
+  
+  .container img {
+    width: 10%;
+    height: 100%;
+    position:absolute;
+   
+  }
+  
+  .img1{
+    animation: moveAcrossScreen 4s linear forwards;
+  }
+  .img2{
+    animation: moveAcrossScreen 6s linear forwards;
+  }
+  .img3{
+    animation: moveAcrossScreen 1s linear forwards;
+  }
+  .img4{
+    animation: moveAcrossScreen 8s linear forwards;
+  }
+  .img5{
+    animation:moveAcrossScreen 0.1s linear forwards;
+  }
+ 
+  @keyframes moveAcrossScreen {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: calc(100% - 200px); 
+    }
+  }
